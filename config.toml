@@ -1,0 +1,60 @@
+baseURL = "https://meerdan.co"
+languageCode = "en-us"
+title = "meerdan.co"
+theme = "story"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "all rights reserved" # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+
+# disqusShortname = ""
+
+[author]
+  name = "ramiro"
+  homepage = "meerdan.co"
+
+[blackfriday]
+    hrefTargetBlank = true
+    # noreferrerLinks = true
+    # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+
+[params]
+  dateform        = "2 jan, 2006"
+  dateformShort   = "2 jan"
+  dateformNum     = "2006.01.02"
+  dateformNumTime = "2006.01.02 02:04 pm gmt -0700"
+
+[permalinks]
+  posts = "/feed/:title/"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "feed"
